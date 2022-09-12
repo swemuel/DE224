@@ -1,0 +1,191 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ 
+* {
+    box-sizing: border-box;
+}
+
+
+header{
+    padding: 3em 1.5em;
+    margin-bottom: 1.5em;
+    align-items: center;
+    border-bottom: 1em;
+    border-color: black;
+    border-style: groove;
+    background-color: #f3f3f3;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+    padding: 0.7em;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: grid;
+}
+
+#category {
+    text-align: center;
+    padding-bottom: 6em;
+}
+
+footer {
+    background-color: #222;
+    margin: 0;
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 4em 0;
+}
+
+
+img {
+    width: 100%;
+}
+
+figure {
+    padding-bottom: 1em;
+}
+
+li {
+    list-style: none;
+}
+
+.item:hover {
+    transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+a:hover {
+    color: rgb(50, 96, 10);
+    cursor: pointer;
+}
+
+/* CATALOGUE */
+
+.catalogue figure{
+    padding: 1em 1em;
+}
+
+.catalogue figcaption{
+    text-align: center;
+}
+
+/* SELECTION  */
+
+#selection {
+    text-align: center;
+}
+
+#selection h1, #selection h3, #selection p {
+    padding-bottom: 0.2em;
+}
+
+#selection h2 {
+    padding-top: 1.2em;
+    padding-bottom: 0.5em;
+}
+
+#selection ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#selection li {
+    border-width: 0.1em;
+    border-color: black;
+    border-style: groove;
+    padding: 0.3em;
+}
+
+#selection li:hover {
+    border-color: red;
+    color: red;
+}
+
+
+
+/* FIRST MEDIA QUEREY */
+@media screen and (min-width: 42rem) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        height: 5em;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: space-around;
+        flex-grow: 1;
+        padding-left: 6em;
+        margin-bottom: 0;
+    }
+
+    main {
+        padding: 0.5em 2em;
+    }   
+
+    figcaption {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5em 0.3em 0 0;
+    }
+
+    /* CATALOGUE PAGES */
+    .catalogue {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .catalogue figure{
+        width: 46%;
+        padding: 2em 0.5em;
+        align-items: center;
+    }
+    .catalogue img {
+        width: 100%;
+        height: auto;
+    }
+
+
+   
+@media screen and (min-width: 62rem) {
+
+    /* CATALOGUE PAGES */
+    .catalogue {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .catalogue figure{
+        width: 30%;
+        padding: 4em 2em;
+        align-items: center;
+    }
+
+    #category {
+        display: flex;
+        justify-content: space-between;
+        padding: 6em 7em 6em 7em;
+    }
+    #category div {
+        width: 48%;
+    }
+}
+}
