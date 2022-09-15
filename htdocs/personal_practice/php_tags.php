@@ -1,0 +1,1 @@
+<?= 'This is a short echo tag that im using to practice for my php syntax assessment' ?>
