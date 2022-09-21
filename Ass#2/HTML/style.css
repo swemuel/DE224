@@ -13,12 +13,53 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 
 header{
     padding: 3em 1.5em;
-    margin-bottom: 1.5em;
     align-items: center;
-    border-bottom: 1em;
-    border-color: black;
-    border-style: groove;
-    background-color: #f3f3f3;
+    border-bottom: 0.7em;
+    border-color: #064601;
+    border-style: solid;
+    background-color: #FFF;
+}
+
+header h1, header div h3 a {
+    color: #075700;
+}
+
+nav {
+    padding: 1.2em;
+    background-color: #FBFBFB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #075700;
+}
+
+nav #categories {
+    width: 75%;
+}
+
+nav #categories {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav #categories li {
+    padding: 1.5em 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #075700;
+}
+
+footer {
+    background-color: #064601;
+    margin: 0;
+    color: white;
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 4em 0;
 }
 
 h1 {
@@ -44,17 +85,6 @@ main {
     text-align: center;
     padding-bottom: 6em;
 }
-
-footer {
-    background-color: #222;
-    margin: 0;
-}
-footer ul{
-    display: flex;
-    justify-content: space-around;
-    padding: 4em 0;
-}
-
 
 img {
     width: 100%;
@@ -119,7 +149,63 @@ a:hover {
     color: red;
 }
 
+#item {
+    width: 26%;
+}
 
+#item img {
+    width: 80%;
+}
+
+#item-details {
+    padding-top: 4em;
+    text-align: center;
+}
+
+#item-account {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d0dfce;
+    align-items: center;
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 1px;
+    width: 60%;
+    margin: 3em auto;
+}
+
+#item-account img {
+    width: 10%;
+}
+
+#buy {
+    background-color: #d0dfce;
+    align-items: center;
+    padding-top: 0.5em;
+    margin-bottom: 3em;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#buy h3{
+    font-size: 2em;
+}
+
+#buy-now {
+    border-top: black;
+    border-style: solid;
+    margin-top: 0.3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.5em;
+}
+
+#buy-now:hover {
+    color: #d0dfce;
+    background-color: #064601;
+}
 
 /* FIRST MEDIA QUEREY */
 @media screen and (min-width: 42rem) {
