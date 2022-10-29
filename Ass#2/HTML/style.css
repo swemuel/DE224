@@ -98,6 +98,22 @@ li {
     list-style: none;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+td, th {
+    border: 1px solid #d0dfce;
+    text-align: left;
+    padding: 24px 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #d0dfce;
+}
+
 .item:hover {
     transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
@@ -149,6 +165,22 @@ a:hover {
     color: red;
 }
 
+.account_page {
+    display: flex;
+    justify-content: center;
+    margin: 4em 0;
+}
+
+.account_links {
+    width: 40%;
+}
+
+.account_links div h3 a{
+    text-align: center;
+    color: black;
+}
+
+
 #item {
     width: 26%;
 }
@@ -176,6 +208,22 @@ a:hover {
 
 #item-account img {
     width: 10%;
+}
+
+#watching {
+    display: flex;
+    justify-content: space-around;
+    background-color: #d0dfce;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    width: 60%;
+    margin: 3em auto;
+}
+
+#watching div {
+    border-style: solid;
+    border-width: 1px;
 }
 
 #buy {
@@ -246,7 +294,7 @@ a:hover {
         align-items: center;
     }
     .catalogue img {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 
@@ -260,9 +308,12 @@ a:hover {
         justify-content: space-evenly;
     }
     .catalogue figure{
-        width: 30%;
-        padding: 4em 2em;
+        width: 20%;
         align-items: center;
+        margin: 1em 3em;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #a8b3a6;
     }
 
     #category {
